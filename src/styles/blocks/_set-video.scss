@@ -1,0 +1,146 @@
+.set-video__white-row {
+  background: #F2F2F2;
+}
+
+.set-video__container {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.set-video__container .block-title__text {
+  color: #201338;
+}
+
+.filter-list {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: -108px;
+  right: 0;
+  background: #c318ff;
+  width: 184px;
+  z-index: 2;
+}
+
+.filter-list__open {
+  display: block;
+}
+
+.arrowup {
+  transform: rotate(180deg);
+}
+
+.filter-list__item {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  &:hover {
+    color: #c318ff;
+    background: #F2F2F2;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.set-video__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.set-video__content .video-block {
+  margin-bottom: 40px;
+}
+
+.set-video__content .video-block__name {
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.set-video__content .video-block__time {
+  bottom: 68px;
+  right: 13px;
+}
+
+.set-video__content .video-block__name {
+  margin-top: 14px;
+  margin-left: 2px;
+}
+
+.more-video {
+  color: #C318FF;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'TTNorms-Thin';
+  border: 2px solid #C318FF;
+  border-radius: 7px;
+  width: 360px;
+  height: 50px;
+  text-align: center;
+  display: block;
+  line-height: 41px;
+  margin: 30px auto 0;
+  cursor: pointer;
+
+  &:hover {
+    background: #C318FF;
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 1200px) {
+  .set-video__content .video-block {
+    margin-right: 0;
+    margin-left: 0;
+    width: 31vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .set-video__content .video-block {
+    width: 47vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .set-video__content .video-block {
+    width: 77vw;
+    margin: auto;
+  }
+  .more-video {
+    width: 77vw;
+    height: 10vw;
+    line-height: 9vw;
+  }
+  .block-title {
+    flex-direction: column;
+  }
+  .block-title__arrow {
+    margin-left: 0;
+  }
+
+  .block-title__text {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .block-select {
+    flex-direction: column;
+    margin: 10px auto 0;
+    padding-left: 0;
+  }
+  .filter-list {
+    position: unset;
+    top: 31px;
+  }
+  .set-video__block-arrow {
+    margin-left: 0;
+  }
+}

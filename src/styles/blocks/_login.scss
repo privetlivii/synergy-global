@@ -1,0 +1,199 @@
+.login-modal{
+  width: 555px;
+  height: 428px;
+  background: #FFFFFF;
+  margin: auto;
+  padding-top: 26px;
+  display: none;
+}
+.login-modal__title{
+  color: #000000;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.login-modal__form{
+  flex-direction: column;
+  display: flex;
+}
+.login-modal__close{
+  text-align: right;
+  margin-right: 30px;
+}
+.login-modal__information{
+  width: 360px;
+  height: 60px;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  margin: 23px auto 0;
+  padding: 10px;
+  color: #999999;
+  font-size: 18px;
+  &::placeholder{
+    color: #7B7B7B;
+    padding-left: 30px;
+  }
+  &:first-child{
+    margin-top: 5px;
+  }
+}
+.login-modal__text {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 500;
+  margin: 15px auto 0;
+}
+.login-modal__information {
+  &::-moz-placeholder {
+    transition: opacity 0.3s ease;
+  }
+
+  &:-ms-input-placeholder {
+    transition: opacity 0.3s ease;
+  }
+
+  &::-ms-input-placeholder {
+    transition: opacity 0.3s ease;
+  }
+
+  &::-webkit-input-placeholder {
+    transition: opacity 0.3s ease;
+  }
+
+  &:focus {
+    &::-moz-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:-ms-input-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &::-ms-input-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &::-webkit-input-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+}
+.login-modal__btn{
+  background: #C318FF;;
+  border-radius: 7px;
+  width: 361px;
+  height: 60px;
+  border: none;
+  margin: 20px auto 0;
+  &:focus{
+    outline: none;
+  }
+}
+.login-modal__btn-link{
+  font-size: 16px;
+  font-family: 'TTNorms-Thin';
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+.forgot-password {
+  font-size: 14px;
+  color: #7B7B7B;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.fancybox-close-small{
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+  svg {
+    display: none !important;
+  }
+}
+.login-modal .fancybox-close-small:before, .login-modal .fancybox-close-small:after, .login__modal-sms .fancybox-close-small:before, .fancybox-close-small:after {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #000000;
+}
+.login-modal .fancybox-close-small:before{
+  transform: rotate(45deg);
+}
+.login-modal .fancybox-close-small:after{
+  transform: rotate(-45deg);
+}
+.create-account{
+  font-weight: bold;
+  font-size: 14px;
+  color: #9345FD;
+  width: 208px;
+  margin-left: auto;
+}
+@media (max-width: 580px) {
+  .login-modal {
+    width: 94vw;
+    height: 80vw;
+    padding-top: 4vw;
+  }
+  .fancybox-close-small {
+    height: 7vw;
+    right: 2vw;
+    top: 3vw;
+    width: 7vw;
+  }
+  .login-modal__title {
+    font-size: 5vw;
+    margin-top: 6vw;
+  }
+  .create-account {
+    font-size: 2.5vw;
+    width: 36vw;
+  }
+  .login-modal__information {
+    width: 62vw;
+    height: 10vw;
+    margin: 4vw auto 0;
+    padding: 1vw;
+    font-size: 3.5vw;
+  }
+  .login-modal__information:first-child {
+    margin-top: 1vw;
+  }
+  .login-modal__btn {
+    border-radius: 0.5vw;
+    width: 62vw;
+    height: 10vw;
+    margin: 4vw auto 0;
+  }
+  .forgot-password {
+    font-size: 2.5vw;
+    margin-left: 16vw;
+    margin-top: 2vw;
+  }
+  .login-modal__btn-link {
+    font-size: 3vw;
+  }
+  .login-modal .fancybox-close-small:before, .login-modal .fancybox-close-small:after, .login__modal-sms .fancybox-close-small:before, .fancybox-close-small:after {
+    height: 6vw;
+    width: 0.5vw;
+  }
+
+}

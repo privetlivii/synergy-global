@@ -1,0 +1,46 @@
+.block-breadcrumb__list-speakers{
+margin-top: 20px;
+}
+
+.speakers__container{
+  padding-bottom: 500px;
+}
+.speakers-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.speakers-box{
+  margin-bottom: 10px;
+  flex-direction: column;
+  display: flex;
+  margin-right: 1px;
+  img{
+    border-radius: 8px;
+  }
+}
+.speakers__container .block-select {
+  color: #ffffff;
+}
+.speakers__container .filter-list {
+  top: -84px;
+}
+
+.arrowup{
+  transform: rotate(180deg);
+}
+
+@media (max-width: 580px){
+  .speakers-content {
+    justify-content: space-evenly;
+  }
+
+}
+
+
+
+
+
+
+
+

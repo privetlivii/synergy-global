@@ -1,0 +1,145 @@
+
+.main-slider__item {
+  position: relative;
+  &:focus{
+    outline: none;
+  }
+}
+
+.main-slider__item-images {
+  margin-left: 10px;
+  margin-right: 10px;
+img {
+  border-radius: 9px;
+}
+}
+.main-slider {
+  display: flex;
+  padding-top: 27px;
+  position: relative;
+  z-index: 1;
+  margin: 0 0.5vw;
+}
+
+
+.slick-slide:not(.slick-current) .main-slider {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.main-slider .slick-arrow {
+  display: flex;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.main-slider__arrows {
+  position: relative;
+}
+
+.slick-slide:not(.slick-active) {
+  opacity: 0;
+}
+
+.main-slider__arrows .slick-prev {
+  position: absolute;
+  top: -185px;
+  left: -39px;
+  z-index: 3;
+  border: none;
+  height: 25px;
+  width: 18px;
+  background: url("../img/arrowleft.svg") no-repeat left;
+  &:focus {
+    outline: none;
+  }
+}
+.main-slider__arrows .slick-next {
+  position: absolute;
+  top: -185px;
+  right: -40px;
+  z-index: 3;
+  border: none;
+  height: 25px;
+  width: 18px;
+  background: url("../img/arrowright.svg") no-repeat left;
+  &:focus {
+    outline: none;
+  }
+}
+.main-slider__arrows .slick-prev::before,
+.main-slider__arrows .slick-next::before {
+  display: none
+}
+.slick-list{
+  padding: 0 27px !important;
+}
+.main-slider__title{
+  width: 540px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  right: 115px;
+}
+@media (max-width: 1200px) {
+  .main-slider__arrows .slick-prev {
+    left: 60px;
+    top: -15vw;
+  }
+  .main-slider__arrows .slick-next {
+    right: 60px;
+    top: -15vw;
+  }
+  .main-slider__title {
+    width: 40vw;
+    top: 4vw;
+    right: 11vw;
+  }
+  .main-slider__item-images img {
+    border-radius: 0.7vw;
+  }
+  .slick-list {
+    padding: 0 0 !important;
+  }
+
+}
+@media (max-width: 768px) {
+  .main-slider__title {
+    width: 30vw;
+    right: 15vw;
+  }
+
+}
+
+@media (max-width: 580px) {
+  .main-slider__arrows .slick-prev{
+    height: 18px;
+    width: 13px;
+    left: 35px;
+    background-size: 2vw;
+  }
+  .main-slider__arrows .slick-next {
+    height: 18px;
+    width: 13px;
+    right: 35px;
+    background-size: 2vw;
+  }
+  .main-slider__item-images img {
+    border-radius: 1vw;
+  }
+  .slick-list {
+    padding: 0 0 !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

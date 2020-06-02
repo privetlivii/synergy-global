@@ -1,0 +1,19 @@
+/* BEGIN general styles */
+@import "general/general";
+@import "general/header";
+@import "general/footer";
+
+/* BEGIN lib styles */
+@import "lib/jquery.fancybox.min";
+@import "lib/slick";
+
+/* BEGIN blocks styles */
+@import "blocks/main-slider";
+@import "blocks/registration";
+@import "blocks/gallery";
+@import "blocks/login";
+@import "blocks/search-filter";
+@import "blocks/set-video";
+@import "blocks/collection-video";
+@import "blocks/speakers";
+@import "blocks/speaker";

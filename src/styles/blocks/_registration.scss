@@ -1,0 +1,241 @@
+.registration-modal{
+  width: 555px;
+  height: 686px;
+  background: #FFFFFF;
+  margin: auto;
+  padding-top: 26px;
+  display: none;
+}
+.registration-modal__title{
+  color: #000000;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.registration-modal__form{
+  flex-direction: column;
+  display: flex;
+}
+.registration-modal__close{
+  text-align: right;
+  margin-right: 30px;
+}
+.registration-modal__information{
+  width: 360px;
+  height: 60px;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  margin: 23px auto 0;
+  padding: 10px;
+  color: #999999;
+  font-size: 18px;
+  &::placeholder{
+    color: #7B7B7B;
+    padding-left: 30px;
+  }
+}
+.registration-modal__text {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 500;
+  margin: 15px auto 0;
+}
+.registration-modal__information {
+  &::-moz-placeholder {
+    transition: opacity 0.3s ease;
+  }
+
+  &:-ms-input-placeholder {
+    transition: opacity 0.3s ease;
+  }
+
+  &::-ms-input-placeholder {
+    transition: opacity 0.3s ease;
+  }
+
+  &::-webkit-input-placeholder {
+    transition: opacity 0.3s ease;
+  }
+
+  &:focus {
+    &::-moz-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:-ms-input-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &::-ms-input-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &::-webkit-input-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+}
+.registration-modal__btn{
+  background: #C318FF;;
+  border-radius: 7px;
+  width: 361px;
+  height: 60px;
+  border: none;
+  margin: 20px auto 0;
+  &:focus{
+    outline: none;
+  }
+}
+.registration-modal__btn-link{
+  font-size: 16px;
+  font-family: 'TTNorms-Thin';
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+.fancybox-close-small{
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+  svg {
+    display: none !important;
+  }
+}
+.registration-modal .fancybox-close-small:before, .registration-modal .fancybox-close-small:after, .registration__modal-sms .fancybox-close-small:before, .fancybox-close-small:after {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #000000;
+}
+.registration-modal .fancybox-close-small:before{
+  transform: rotate(45deg);
+}
+.registration-modal .fancybox-close-small:after{
+  transform: rotate(-45deg);
+}
+.registration__form-checkbox {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  width: 18px;
+  height: 19px;
+  margin-top: 3px;
+}
+
+.registration__form-checkbox:checked ~ .registration__form-checkbox__label::before {
+  color: #fff;
+  border-color: transparent;
+  box-shadow: none;
+  background-image: none;
+}
+.registration__form-checkbox:checked ~ .registration__form-checkbox__label::after {
+  opacity: 1;
+  transform: rotate(45deg) scale(1);
+  background-image: none;
+}
+.registration__form-checkbox__label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #7B7B7B;
+  &::after,
+  &::before {
+    display: block;
+    transition: all 0.25s cubic-bezier(0.27, 0.01, 0.38, 1.06);
+    content: "";
+  }
+  &::before {
+    user-select: none;
+    margin-right: 15px;
+    width: 1.125rem;
+    height: 1.125rem;
+    border: 1px solid #999999;
+    box-shadow: none;
+    pointer-events: all;
+
+  }
+  &::after {
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    width: 5px;
+    height: 11px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    border-right: 2px solid #C318FF;
+    border-bottom: 2px solid #C318FF;
+    transition-delay: 0.1s;
+  }
+}
+.registration__form-checkbox__block {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .registration-modal {
+    width: 84vw;
+  }
+}
+@media (max-width: 480px) {
+  .registration-modal {
+    height: 145vw;
+  }
+  .registration-modal__title {
+    font-size: 7vw;
+    margin-top: 7vw;
+  }
+ .fancybox-close-small {
+    height: 7vw;
+    right: 4vw;
+    top: 3vw;
+    width: 7vw;
+  }
+  .registration-modal__information {
+    width: 75vw;
+    height: 12vw;
+    margin: 5vw auto 0;
+    padding: 1vw;
+    font-size: 4vw;
+  }
+  .registration-modal__btn {
+    border-radius: 0.5vw;
+    width: 75vw;
+    height: 13vw;
+    margin: 5vw auto 0;
+  }
+  .registration__form-checkbox__block {
+    margin-left: 5vw;
+    margin-top: 4vw;
+  }
+  .registration-modal__btn-link {
+    font-size: 5vw;
+  }
+  .registration__form-checkbox__label {
+    font-size: 3vw;
+  }
+}
+
+
+
+
+
